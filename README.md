@@ -6,6 +6,7 @@ kubectl run -i --tty fedora --image=fedora --restart=Never -- sh
 
 ![3](https://user-images.githubusercontent.com/78191008/145844233-19e096db-a258-4a50-9f67-c43c3b8249d8.jpg)
 
+- Установил сервис для доступности внутри крастера к Vault [service.yml](https://github.com/Kostromin-Mixa/kube_secret-14.2/blob/main/service.yml)    
 - Получил значение внутреннего IP пода 14.2-netology-vault    
 kubectl get pod 14.2-netology-vault -o json | jq -c '.status.podIPs'
 
